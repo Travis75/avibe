@@ -8,9 +8,9 @@
         <h3>
           Apply Here To Test Our Beta!
         </h3>
-        <input id="input_field" type="text" name="firstname" placeholder="*Name"/>
+        <input id="input_field" type="text" name="name" placeholder="*Name"/>
         <br>
-        <input id="input_field" type="text" name="lastname" placeholder="*Email"/><br>
+        <input id="input_field" type="text" name="email" placeholder="*Email"/><br>
         <input id="submit" type="submit" value="Submit">
       </form>
     </div>
@@ -19,8 +19,54 @@
     </h3>
 </div>
 <hr id="about_breakpoint">
-<div>
+<div class="index_info">
   <h1 id='meet_avibe'>
     Meet Avibe
   </h1>
+  <div class="photo_container">
+    <%= image_tag 'LiveFeed&Profile.jpg' %>
+  </div>
+  <div class="info_container">
+    <%= image_tag 'Headphones.jpg' %>
+    <h1>
+      Instantly know what everyone is listening to, regardless of where they listened to it.
+    </h1>
+    <h3>
+      Connect to Pandora, Spotify, YouTube, iTunes, Rdio, 8tracks, iHeartRadio, and more!
+    </h3>
+  </div>
+  <br class="clear"/>
 </div>
+<hr>
+<div class="index_info">
+  <div class="info_container two">
+    <%= image_tag 'Play.jpg' %>
+    <h1>
+      Listen to any song you find. Then share it with anyone.
+    </h1>
+    <h3>
+      We play music from the largest catalogue in the world to make sure you get to hear what you want, when you want.
+    </h3>
+  </div>
+  <div class="photo_container">
+    <%= image_tag 'Song.jpg' %>
+  </div>
+  <br class="clear"/>
+</div>
+<hr>
+<div class="index_info">
+  <div class="photo_container">
+    <%= image_tag 'WhatsHot&Vibes.jpg' %>
+  </div>
+  <div class="info_container">
+    <%= image_tag 'Flame.jpg' %>
+    <h1>
+      Instantly know what everyone is listening to, regardless of where they listened to it.
+    </h1>
+    <h3>
+      Connect to Pandora, Spotify, YouTube, iTunes, Rdio, 8tracks, iHeartRadio, and more!
+    </h3>
+  </div>
+  <br class="clear"/>
+</div>
+<hr>
