@@ -126,55 +126,54 @@ hr:after {
   background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
 }
 
+.info_wrapper {
+  width: 100%;
+}
+
 .index_info {
-  text-align: center;
-  overflow: visible;
+  margin: 0 auto;
+  width: 75%;
+  color: white;
 }
 
 h1#meet_avibe {
-  color:white;
   font-size:50px;
   font-weight:bold;
-}
-/*Photo container was clearly just a terrible hack around.*/
-.photo_container {
-  height: 450px;
-  width: 550px;
-  float:left;
-  margin-left: 10%;
-  display: inline-block;
+  text-align: center;
 }
 
+.photo_container {
+  float: left;
+  height: 55%;
+  width: 55%;
+}
 .photo_container img {
   height: 100%;
-  display: inline-block;
+  width: 100%;
+  float: left;
 }
 
 .info_container {
-  color: white;
-  display: inline-block;
+  height: 55%;
+  width:40%;
   float: left;
   margin-left: 5%;
 }
 
 .info_container img {
-  height: 150px;
-  width: 150px;
-  /*margin-right: 100%;*/
+  float: left;
+  height: 35%;
+  width: 35%;
 }
 
 .info_container h1 {
-  width: 350px;
-  text-align: left;
+  margin: 0 0 0 0;
+  float: left;
 }
 
 .info_container h3 {
-  width: 350px;
-  text-align: left;
-}
-
-.info_breakpoint {
-  margin-top: 350px;
+  margin: 0 0 0 0;
+  float: left;
 }
 
 .clear {
@@ -182,6 +181,42 @@ h1#meet_avibe {
     line-height:0;
 }
 
-.two {
-  margin-left: 150px;
+.larger_font_size {
+  font-size: 220%;
+}
+
+.smaller_font_size {
+  font-size: 135%;
+}
+
+@media screen and (max-width: 980px) {
+  .larger_font_size {
+    font-size: 160%;
+  }
+
+  .smaller_font_size {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .larger_font_size {
+    font-size: 120%;
+  }
+
+  .smaller_font_size {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .info_wrapper {
+    width: 135%;
+  }
+  .larger_font_size {
+    font-size: 120%;
+  }
+  .smaller_font_size {
+    font-size: 90%
+  }
 }

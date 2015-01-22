@@ -7,8 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="nav_wrapper">
-    <div id="nav_child">
+  <div class="nav_wrapper">
+    <div class="nav_child">
       <div id="masthead">
         <%= image_tag 'http://static.wixstatic.com/media/10f9fb_77f46adafb254298b8da2ada357af100.png_srz_p_185_54_75_22_0.50_1.20_0.00_png_srz' %>
       </div>
@@ -17,7 +17,7 @@
         <%= image_tag "http://static.wixstatic.com/media/09b721261e9fba8dd8a96ee539a0743f.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
         <%= image_tag "http://static.wixstatic.com/media/f81288cef4de8223015ce3dabe23a0c4.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
       </div>
-      <div id="links">
+      <div class="links">
         <ul>
           <a href="#">
             <li>
@@ -59,6 +59,50 @@
     </div>
   </div>
 <%= yield %>
-
+  <div class="nav_child" style="width:100%;text-align:center;">
+    <div class="links">
+      <ul>
+        <a href="#">
+          <li>
+            <h4>
+              Home
+            <h4>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h4>
+              About
+            </h4>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h4>
+              Privacy
+            </h4>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h4>
+              Terms
+            </h4>
+          </li>
+        </a>
+        <a href="#">
+          <li>
+            <h4>
+              Contact
+            </h4>
+          </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+  <div class="footer_info">
+    <%=image_tag "Logo.jpg", :style => "height: 200px; width: 200px"%>
+    <%=image_tag "AvibeCopyright.png", :style => "height: 200px; width: 300px"%>
+  </div>
 </body>
 </html>
