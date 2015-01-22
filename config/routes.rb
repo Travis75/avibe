@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get 'contact' => 'static_pages#contact', as: :contact
 
+  post 'signup' => 'static_pages#signup', as: :signup
+
 end

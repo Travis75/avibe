@@ -1,41 +1,134 @@
-body {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-#nav_wrapper {
-  width: 100%;
-  border: 1px solid white;
+#index_photo_container {
+  height: 400px;
+  width: 400px;
+  position: relative;
   text-align: center;
 }
 
-#nav_child {
-  display: inline-block;
-  background-color: white;
-  width: 50%;
+#index_photo_container img {
+  position: absolute;
+  left: 5%;
+  top: 0;
 }
 
-#masthead {
-  float: left;
+#index_photo_container h1 {
+  z-index:100;
+  position:absolute;
+  color:white;
+  font-size:40px;
+  font-weight:bold;
+  left: 200px;
+  top:100px;
+  width: 600px;
 }
 
-#links ul {
-  list-style: none;
-  margin: 0 auto;
-  padding-left: 1%;
+#signup_form {
+  position:absolute;
+  color: white;
+  z-index: 100;
+  left: 250px;
+  top: 300px;
+  width: 300px;
 }
 
-#links li {
-  display: inline-block;
+input#input_field {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 2px 3px #666;
+    -webkit-box-shadow: 2px 2px 3px #666;
+    box-shadow: 2px 2px 3px #666;
+    font-size: 15px;
+    padding: 4px 7px;
+    outline: 0;
+    -webkit-appearance: none;
+    margin-bottom: 3%;
+    width: 250px;
 }
 
-#links a {
-  text-decoration: none;
+input#input_field:focus {
+  border-color: #339933;
 }
 
-#social_media {
-  float: right;
-  display: inline-block;
+input#submit {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+  /*margin: 0 auto;*/
+  border: 2px solid rgb(30,205,151);
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  font: normal 10px/10px "Advent Pro", Helvetica, sans-serif;
+  color: rgb(30, 205, 151);
+  /*text-align: center;*/
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0);
+  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
+}
+
+input#submit:hover {
+  color: rgba(255,255,255,1);
+  background: rgb(30, 205, 151);
+}
+
+input#submit:active {
+  border: 2px solid rgba(33,224,163,1);
+  background: rgba(33,224,163,1);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+#index_photo_container h3#mike {
+  z-index:100;
+  position:absolute;
+  color:white;
+  font-size: 18px;
+  font-weight:bold;
+  left: 750px;
+  top: 700px;
+  width: 400px;
+}
+
+#about_breakpoint {
+  margin-top: 430px;
+}
+
+hr {
+  height: 1px;
+  margin: 50px 0;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0,0,0,0)), color-stop(0.5, white), to(rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
+  background: -moz-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
+  background: -o-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
+  background: linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
+  border: 0;
+}
+hr:after {
+  display: block;
+  content:'';
+  height: 30px;
+
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+h1#meet_avibe {
+  color:white;
+  font-size:50px;
+  font-weight:bold;
 }

@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def signup
+     UserMailer.signup_email(name, email).deliver_now
+  end
 end

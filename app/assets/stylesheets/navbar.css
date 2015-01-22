@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav_wrapper {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding-top: 1%;
+  text-align: center;
+  color:white;
+}
+
+#nav_child {
+  display: inline-block;
+  width: 900px;
+}
+
+#masthead {
+  float: left;
+}
+
+#links ul {
+  list-style: none;
+  margin: 0 auto;
+  padding-left: 1%;
+}
+
+#links li {
+  padding-left: 3%;
+  color:white;
+  display: inline-block;
+}
+
+#links a {
+  text-decoration: none;
+}
+
+#social_media {
+  margin-top: 1%;
+  float: right;
+  display: inline-block;
+}
