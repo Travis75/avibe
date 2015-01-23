@@ -2,9 +2,11 @@
 <html>
 <head>
   <title>Avibe</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class="nav_wrapper">
@@ -13,41 +15,47 @@
         <%= image_tag 'http://static.wixstatic.com/media/10f9fb_77f46adafb254298b8da2ada357af100.png_srz_p_185_54_75_22_0.50_1.20_0.00_png_srz' %>
       </div>
       <div id="social_media">
-        <%= image_tag "http://static.wixstatic.com/media/d75821b3625d16f95dfd8ebff761922d.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
-        <%= image_tag "http://static.wixstatic.com/media/09b721261e9fba8dd8a96ee539a0743f.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
-        <%= image_tag "http://static.wixstatic.com/media/f81288cef4de8223015ce3dabe23a0c4.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
+        <a href="https://www.facebook.com/avibeapp">
+          <%= image_tag "http://static.wixstatic.com/media/d75821b3625d16f95dfd8ebff761922d.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
+        </a>
+        <a href="https://twitter.com/avibeapp">
+          <%= image_tag "http://static.wixstatic.com/media/09b721261e9fba8dd8a96ee539a0743f.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
+        </a>
+        <a href="https://www.linkedin.com/company/avibe">
+          <%= image_tag "http://static.wixstatic.com/media/f81288cef4de8223015ce3dabe23a0c4.png_srz_p_35_35_75_22_0.50_1.20_0.00_png_srz" %>
+        </a>
       </div>
       <div class="links">
         <ul>
-          <a href="#">
+          <a href="/">
             <li>
               <h4>
                 Home
               <h4>
             </li>
           </a>
-          <a href="#">
+          <a href="/#about_breakpoint">
             <li>
               <h4>
                 About
               </h4>
             </li>
           </a>
-          <a href="#">
+          <a href="/privacy">
             <li>
               <h4>
                 Privacy
               </h4>
             </li>
           </a>
-          <a href="#">
+          <a href="/terms">
             <li>
               <h4>
                 Terms
               </h4>
             </li>
           </a>
-          <a href="#">
+          <a href="/contact">
             <li>
               <h4>
                 Contact
@@ -59,38 +67,38 @@
     </div>
   </div>
 <%= yield %>
-  <div class="nav_child" style="width:100%;text-align:center;">
+  <div class="nav_child bottom" style="width:100%;text-align:center;">
     <div class="links">
       <ul>
-        <a href="#">
+        <a href="/">
           <li>
             <h4>
               Home
             <h4>
           </li>
         </a>
-        <a href="#">
+        <a href="/#about_breakpoint">
           <li>
             <h4>
               About
             </h4>
           </li>
         </a>
-        <a href="#">
+        <a href="/privacy">
           <li>
             <h4>
               Privacy
             </h4>
           </li>
         </a>
-        <a href="#">
+        <a href="/terms">
           <li>
             <h4>
               Terms
             </h4>
           </li>
         </a>
-        <a href="#">
+        <a href="/contact">
           <li>
             <h4>
               Contact

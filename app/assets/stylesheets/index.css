@@ -89,6 +89,11 @@ input#submit:active {
   transition: none;
 }
 
+img.appstore {
+  margin-left: 260px;
+  margin-top: 500px;
+}
+
 #index_photo_container h3#mike {
   z-index:105;
   position:absolute;
@@ -209,14 +214,42 @@ h1#meet_avibe {
   }
 }
 
-@media screen and (max-width: 568px) {
+
+
+@media screen and (max-width: 320px) {
   .info_wrapper {
-    width: 135%;
+    width: 1242px;
   }
   .larger_font_size {
-    font-size: 120%;
+    font-size: 32px;
   }
   .smaller_font_size {
-    font-size: 90%
+    font-size: 18px;
+  }
+  .footer_info {
+    width: 1242px;
+  }
+  hr {
+    width: 1242px;
+  }
+  .bottom {
+    width: 1242px;
   }
 }
+
+/*@media screen and (max-width: 375px) {
+  #index_photo_container img {
+    width: 100%;
+  }
+  #index_photo_container h1 {
+    left: 150;
+    font-size: 10px;
+    width: 75px;
+  }
+  #signup_form {
+    left: 50px;
+  }
+  .nav_child {
+    width: 100%;
+  }
+}*/

@@ -12,6 +12,10 @@ class StaticPagesController < ApplicationController
   end
 
   def signup
-     UserMailer.signup_email(name, email).deliver_now
+    p "PRODUCTION: #{Rails.env.production?}"
+    p "DEVELOPMENT: #{Rails.env.development?}"
+    p "GOT SOME PARAMS"
+     UserMailer.signup_email(params[:name], params[:email]).deliver_now
+    redirect_to "/"
   end
 end
