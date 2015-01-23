@@ -1,2 +1,86 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
+<div id="index_photo_container">
+    <%= image_tag 'Mike&Banks.jpg' %>
+    <h1>
+      Discover, share, and play what everyone is listening to, on any music service. Woah.
+    </h1>
+    <div id="signup_form">
+      <form action="/signup" method="post">
+        <h3>
+          Apply Here To Test Our Beta!
+        </h3>
+        <input id="input_field" type="text" name="name" placeholder="*Name"/>
+        <br>
+        <input id="input_field" type="text" name="email" placeholder="*Email"/><br>
+        <input name="authenticity_token" type="hidden" value= <%= form_authenticity_token %> />
+        <input id="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <%=image_tag "http://static.wixstatic.com/media/10f9fb_12a307b4afda4ccaaa38bf7f2227e985.png_srz_p_241_72_75_22_0.50_1.20_0.00_png_srz", :class => "appstore"%>
+    <h3 id="mike">
+      This is Mike and his dog, Banks. Banks is listening to "Act Right" by Yo Gotti in this shot. Banks is the unofficial yet very official dog of Avibe.
+    </h3>
+</div>
+<hr id="about_breakpoint">
+<div class="info_wrapper">
+  <div class="index_info">
+    <h1 id='meet_avibe'>
+      Meet Avibe
+    </h1>
+    <div class="photo_container">
+      <%= image_tag 'LiveFeed&Profile.jpg' %>
+      <br class="clear"/>
+    </div>
+    <div class="info_container">
+        <%= image_tag 'Headphones.jpg' %>
+        <h1 class="larger_font_size">
+          Instantly know what everyone is listening to, regardless of where they listened to it.
+        </h1>
+        <h3 class="smaller_font_size">
+          Connect to Pandora, Spotify, YouTube, iTunes, Rdio, 8tracks, iHeartRadio, and more!
+        </h3>
+      <br class="clear"/>
+    </div>
+    <br class="clear"/>
+  </div>
+</div>
+<hr>
+<div class="info_wrapper">
+  <div class="index_info">
+    <div class="info_container">
+        <%= image_tag 'Play.jpg'%>
+        <h1 class="larger_font_size">
+          Listen to any song you find. Then share it with anyone.
+        </h1>
+        <h3 class="smaller_font_size">
+          We play music from the largest catalogue in the world to make sure you get to hear what you want, when you want.
+        </h3>
+      <br class="clear"/>
+    </div>
+    <div class="photo_container">
+      <%= image_tag 'Song.jpg', :style => "height: 50%;width:50%;margin-left:35%"%>
+      <br class="clear"/>
+    </div>
+    <br class="clear"/>
+  </div>
+</div>
+<hr>
+<div class="info_wrapper">
+  <div class="index_info">
+    <div class="photo_container">
+      <%= image_tag 'WhatsHot&Vibes.jpg' %>
+      <br class="clear"/>
+    </div>
+    <div class="info_container">
+        <%= image_tag 'Flame.jpg' %>
+        <h1 class="larger_font_size">
+          For the first time ever, find trending music among your friends and college campus.
+        </h1>
+        <h3 class="smaller_font_size">
+          Find the best music on all of Avibe, on your campus, or just between your pals.
+        </h3>
+      <br class="clear"/>
+    </div>
+    <br class="clear"/>
+  </div>
+</div>
+<hr>
