@@ -96,7 +96,7 @@ h1#meet_avibe {
   width: 55%;
 }
 .photo_container img {
-  height: 100%;
+  height: auto;
   width: 100%;
   float: left;
 }
