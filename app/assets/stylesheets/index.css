@@ -3,13 +3,11 @@ body {
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  /*font-family: 'Oswald', sans-serif;*/
 }
 
 #index_photo_container {
   margin-left: 2%;
   margin-right: 2%;
-  /*height: 52em;*/
   background-image: url('Mike&Banks.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -18,7 +16,7 @@ body {
 #index_photo_container h1 {
   text-align: center;
   color:white;
-  font-size:40px;
+  font-size: 250%;
   font-weight:bold;
   margin: 0 0 0 0;
   padding-top: 10%;
@@ -68,30 +66,12 @@ img.appstore {
   width: 35%;
 }
 
-#about_breakpoint {
-  margin-top: 430px;
-}
-
 hr {
-  height: 1px;
-  margin: 50px 0;
-  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0,0,0,0)), color-stop(0.5, white), to(rgba(0,0,0,0)));
-  background: -webkit-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
-  background: -moz-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
-  background: -o-linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
-  background: linear-gradient(left, rgba(0,0,0,0), #333333, rgba(0,0,0,0));
-  border: 0;
-}
-hr:after {
-  display: block;
-  content:'';
-  height: 30px;
-
-  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
-  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
-  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  margin: 17px 0 18px;
+  height: 0;
+  clear: both;
+  border: solid gray;
+  border-width: 1px 0 0;
 }
 
 .info_wrapper {
@@ -177,42 +157,3 @@ h1#meet_avibe {
   }
 }
 
-
-
-@media screen and (max-width: 320px) {
-  .info_wrapper {
-    width: 1242px;
-  }
-  .larger_font_size {
-    font-size: 32px;
-  }
-  .smaller_font_size {
-    font-size: 18px;
-  }
-  .footer_info {
-    width: 1242px;
-  }
-  hr {
-    width: 1242px;
-  }
-  .bottom {
-    width: 1242px;
-  }
-}
-
-/*@media screen and (max-width: 375px) {
-  #index_photo_container img {
-    width: 100%;
-  }
-  #index_photo_container h1 {
-    left: 150;
-    font-size: 10px;
-    width: 75px;
-  }
-  #signup_form {
-    left: 50px;
-  }
-  .nav_child {
-    width: 100%;
-  }
-}*/
