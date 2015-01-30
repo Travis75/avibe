@@ -1,34 +1,36 @@
-#index_photo_container {
-  height: 400px;
-  width: 400px;
-  position: relative;
-  text-align: center;
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  /*font-family: 'Oswald', sans-serif;*/
 }
 
-#index_photo_container img {
-  position: absolute;
-  left: 5%;
-  top: 0;
+#index_photo_container {
+  margin-left: 2%;
+  margin-right: 2%;
+  /*height: 52em;*/
+  background-image: url('Mike&Banks.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #index_photo_container h1 {
-  z-index:105;
-  position:absolute;
+  text-align: center;
   color:white;
   font-size:40px;
   font-weight:bold;
-  left: 200px;
-  top:100px;
-  width: 600px;
+  margin: 0 0 0 0;
+  padding-top: 10%;
+  margin-left: 15%;
+  width: 50%;
 }
 
 #signup_form {
-  position:absolute;
   color: white;
-  z-index: 105;
-  left: 250px;
-  top: 300px;
-  width: 300px;
+  margin-left: 20%;
+  margin-top: 3%;
+  width: 25%;
 }
 
 input#input_field {
@@ -44,65 +46,26 @@ input#input_field {
     outline: 0;
     -webkit-appearance: none;
     margin-bottom: 3%;
-    width: 250px;
+    width: 140%;
 }
 
 input#input_field:focus {
   border-color: #339933;
 }
 
-input#submit {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 100px;
-  height: 25px;
-  cursor: pointer;
-  /*margin: 0 auto;*/
-  border: 2px solid rgb(30,205,151);
-  -webkit-border-radius: 40px;
-  border-radius: 40px;
-  font: normal 10px/10px "Advent Pro", Helvetica, sans-serif;
-  color: rgb(30, 205, 151);
-  /*text-align: center;*/
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  letter-spacing: 1px;
-  background: rgba(0,0,0,0);
-  -webkit-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  -moz-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  -o-transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-  transition: background-color 0.3s cubic-bezier(0, 0, 0, 0), color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0), border-width 0.3s cubic-bezier(0, 0, 0, 0), border-color 0.3s cubic-bezier(0, 0, 0, 0);
-}
-
-input#submit:hover {
-  color: rgba(255,255,255,1);
-  background: rgb(30, 205, 151);
-}
-
-input#submit:active {
-  border: 2px solid rgba(33,224,163,1);
-  background: rgba(33,224,163,1);
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-
 img.appstore {
-  margin-left: 260px;
-  margin-top: 500px;
+  margin-left: 20%;
+  margin-top: 2%;
 }
 
 #index_photo_container h3#mike {
-  z-index:105;
-  position:absolute;
   color:white;
   font-size: 18px;
   font-weight:bold;
-  left: 750px;
-  top: 700px;
-  width: 400px;
+  margin-left: 60%;
+  margin-top: 12%;
+  padding-bottom: 5%;
+  width: 35%;
 }
 
 #about_breakpoint {
@@ -191,7 +154,7 @@ h1#meet_avibe {
 }
 
 .smaller_font_size {
-  font-size: 135%;
+  font-size: 115%;
 }
 
 @media screen and (max-width: 980px) {

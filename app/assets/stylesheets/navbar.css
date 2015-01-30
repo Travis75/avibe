@@ -1,11 +1,3 @@
-body {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  font-family: 'Oswald', sans-serif;
-}
-
 .nav_wrapper {
   position: fixed;
   z-index: 100;
@@ -24,6 +16,11 @@ body {
   float: left;
 }
 
+#masthead img {
+  height: 100px;
+  width: 200px;
+  margin-top: -12%;
+}
 .links ul {
   list-style: none;
   margin: 0 auto;
