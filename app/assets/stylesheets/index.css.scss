@@ -8,7 +8,7 @@ body {
 #index_photo_container {
   margin-left: 2%;
   margin-right: 2%;
-  background-image: url('Mike&Banks.jpg');
+  background-image: asset-data-url("Mike&Banks.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -28,7 +28,7 @@ body {
   color: white;
   margin-left: 20%;
   margin-top: 3%;
-  width: 25%;
+  width: 28%;
 }
 
 input#input_field {
@@ -51,6 +51,15 @@ input#input_field:focus {
   border-color: #339933;
 }
 
+#submit {
+  color: white;
+  font-size: 15px;
+  padding: 15px 35px 15px 35px;
+  background: #78AB46;
+  border:1px solid white;
+  border-radius: 5px;
+}
+
 img.appstore {
   margin-left: 20%;
   margin-top: 2%;
@@ -67,7 +76,10 @@ img.appstore {
 }
 
 hr {
-  margin: 17px 0 18px;
+  width: 97%;
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
   height: 0;
   clear: both;
   border: solid gray;
